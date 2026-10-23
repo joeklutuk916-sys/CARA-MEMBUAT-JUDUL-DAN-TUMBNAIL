@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cara Membuat Judul & Thumbnail</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- LAYAR SAMBUTAN (AUTOPLAY MUSIK) -->
+    <div id="welcomeScreen" class="welcome-screen">
+        <div class="welcome-content">
+            <i class="fab fa-youtube welcome-icon animate-pulse"></i>
+            <h2 class="animate-slide-up delay-1">Informasi Penting</h2>
+            <p class="animate-slide-up delay-2">Cara Membuat Judul & Tumbnail</p>
+            <button id="startBtn" class="btn-start animate-pop delay-3">
+                <i class="fas fa-play"></i> Buka & Putar Musik
+            </button>
+        </div>
+    </div>
+
+    <!-- AUDIO (Pastikan file kopi.mp3 ada di folder yang sama) -->
+    <audio id="bgMusic" loop>
+        <source src="kopi.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Tombol Musik Melayang -->
+    <button class="music-btn hidden" id="musicBtn">
+        <i class="fas fa-pause" id="musicIcon"></i>
+    </button>
+
+    <!-- Container Utama -->
+    <div class="container">
+        <!-- Ornamen Animasi Latar -->
+        <div class="ornament orn-dots-top"></div>
+        <div class="ornament orn-dots-bottom"></div>
+        <div class="ornament orn-shape-top"></div>
+        <div class="ornament orn-shape-bottom"></div>
+
+        <!-- Header -->
+        <header class="animate-pop">
+            <i class="fab fa-youtube yt-icon"></i>
+            <h1>CARA MEMBUAT<br>JUDUL <span>&</span> THUMBNAIL</h1>
+        </header>
+
+        <!-- BAGIAN A -->
+        <div class="section-label animate-slide-right delay-1">
+            A. PENULISAN JUDUL <span class="teks-opsi">( pilih salah satu)</span>
+        </div>
+        
+        <div class="grid-a">
+            <!-- Card A1 -->
+            <div class="card card-a card-green animate-slide-up delay-2">
+                <div class="icon-box bg-green"><i class="fas fa-copy"></i></div>
+                <h3>1. bikin mirip</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle check-green"></i> Copy judul 100% sama persis.</li>
+                    <li><i class="fas fa-check-circle check-green"></i> Jangan ubah.</li>
+                </ul>
+            </div>
+
+            <!-- Card A2 -->
+            <div class="card card-a card-blue animate-slide-up delay-3">
+                <div class="icon-box bg-blue"><i class="fas fa-sync-alt"></i></div>
+                <h3>2. lingkaran setan<br>(chat gpt)</h3>
+                <ul>
+                    <li><i class="fas fa-link check-blue"></i> saling berkaitan antar judul</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- BAGIAN B -->
+        <div class="section-label animate-slide-right delay-4">
+            B. THUMBNAIL <span class="teks-opsi">(pilih salah satu)</span>
+        </div>
+
+        <!-- Card B1 -->
+        <div class="card card-b card-b1 animate-slide-up delay-5">
+            <div class="card-title">
+                <div class="num-box bg-dark">1</div> bikin mirip
+            </div>
+            <div class="content-b">
+                <div class="thumb-mock thumb-mirip">
+                    <div class="text-thumb">RAHASIA<br><span>SUKSES</span></div>
+                    <div class="person-vector"></div>
+                </div>
+                <ul class="list-b">
+                    <li><i class="fas fa-check-circle check-grey"></i> Tulisan thumbnail tetap 100% sama persis.</li>
+                    <li><i class="fas fa-check-circle check-grey"></i> Pose/orangnya mirip.(tapi lebih bagus)</li>
+                    <li><i class="fas fa-check-circle check-grey"></i> Warna background mirip.</li>
+                    <li><i class="fas fa-check-circle check-grey"></i> Posisi kiri-kanan sama.(tapi lebih bagus)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Card B2 -->
+        <div class="card card-b card-b2 animate-slide-up delay-6">
+            <div class="card-title">
+                <div class="num-box bg-dark">2</div> Rekomendasi
+                <div class="badge-plus"><i class="fas fa-plus"></i> plus</div>
+            </div>
+            <div class="content-b">
+                <div class="thumb-mock thumb-premium">
+                    <div class="text-thumb">RAHASIA<br><span>SUKSES</span></div>
+                    <div class="person-vector"></div>
+                </div>
+                <ul class="list-b">
+                    <li><i class="fas fa-check-circle check-yellow"></i> Tulisan thumbnail tetap 100% sama persis.</li>
+                    <li><i class="fas fa-check-circle check-yellow"></i> Background lebih premium.punya style sendiri</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
